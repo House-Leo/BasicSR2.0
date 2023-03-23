@@ -2,8 +2,6 @@
   <img src="assets/basicsr_xpixel_logo.png" height=120>
 </p>
 
-## <div align="center"><b><a href="README.md">English</a> | <a href="README_CN.md">简体中文</a></b></div>
-
 <div align="center">
 
 [![LICENSE](https://img.shields.io/github/license/xinntao/basicsr.svg)](https://github.com/xinntao/BasicSR/blob/master/LICENSE.txt)
