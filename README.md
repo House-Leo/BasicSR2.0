@@ -51,7 +51,7 @@ BasicSR (**Basic** **S**uper **R**estoration) is an open-source **image and vide
 > CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \\\
 > ./scripts/dist_train.sh 8 options/train/ESRGAN/train_RRDBNet_PSNR_x4.yml<br>
 
-**It should work well on the server with 8 RTX 4090s.**
+**Note: Due to some bugs reported in [NVIDIA_FORUM](https://forums.developer.nvidia.com/t/parallel-training-with-4-cards-4090-cannot-be-performed-on-amd-5975wx-stuck-at-the-beginning/237813/10), I have added `export NCCL_P2P_DISABLE=1` to [dist_train](scripts/dist_train.sh) for DDP training on a server with RTX 4090s. You should remove it  when train on a server with other GPUs (e.g. RTX 3090, A6000).**
 
 ## 📜 License and Acknowledgement
 
